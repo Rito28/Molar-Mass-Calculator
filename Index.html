@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب الكتلة المولارية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+        </select>
+        <h1 id="title">حاسبة الكتلة المولارية</h1>
+        <label id="label-compound" for="compound">أدخل الصيغة الكيميائية:</label>
+        <input type="text" id="compound" placeholder="مثل H2O أو CO2">
+        <button id="calculate-button" onclick="calculateMolarMass()">احسب</button>
+        <p id="result"></p>
+        <div id="element-info">
+            <h2 id="element-info-title">معلومات عن العناصر:</h2>
+            <ul id="element-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
